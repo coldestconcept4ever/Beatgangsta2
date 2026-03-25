@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/auth/google/url.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/health.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "server.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/auth/google/url",
+      "destination": "api/auth/google/url.ts"
+    },
+    {
+      "source": "/api/health",
+      "destination": "api/health.ts"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "server.ts"
+    },
+    {
+      "source": "/privacy",
+      "destination": "server.ts"
+    },
+    {
+      "source": "/terms",
+      "destination": "server.ts"
+    },
+    {
+      "source": "/((?!api/|assets/|avatar/|privacy|terms|robots\\.txt|sitemap\\.xml|ads\\.txt|favicon\\.png|favicon\\.ico|\\.well-known/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

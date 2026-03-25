@@ -1,0 +1,4 @@
+Contact: mailto:coldestconcept@gmail.com
+Expires: 2027-03-18T02:10:00.000Z
+Preferred-Languages: en
+Canonical: https://beatgangsta.com/.well-known/security.txt

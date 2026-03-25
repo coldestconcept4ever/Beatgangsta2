@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatGangsta | Elite VST Production Assistant</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/hvAKmSG.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/hvAKmSG.png">
+    <meta name="description" content="Architect freezing-cold rap and trap signal chains with the official BeatGangsta protocols.">
+    <link rel="canonical" href="https://www.beatgangsta.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.beatgangsta.com/">
+    <meta property="og:title" content="BeatGangsta | Elite VST Production Assistant">
+    <meta property="og:description" content="Architect freezing-cold rap and trap signal chains with the official BeatGangsta protocols.">
+    <meta property="og:image" content="https://beatgangsta.com/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.beatgangsta.com/">
+    <meta property="twitter:title" content="BeatGangsta | Elite VST Production Assistant">
+    <meta property="twitter:description" content="Architect freezing-cold rap and trap signal chains with the official BeatGangsta protocols.">
+    <meta property="twitter:image" content="https://beatgangsta.com/og-image.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://challenges.cloudflare.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=UnifrakturMaguntia&display=swap">
+    <link rel="preload" as="image" href="https://i.imgur.com/guBdsj7.png">
+    <link rel="preload" as="image" href="https://i.imgur.com/BTIFNda.png">
+    <link rel="preload" as="image" href="https://i.imgur.com/RCdiUrj.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=UnifrakturMaguntia&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=UnifrakturMaguntia&display=swap">
+    </noscript>
+    
+    <style>
+        .font-script {
+            font-family: 'UnifrakturMaguntia', cursive;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #e5e5e5;
+            background-color: #0a0a0a; /* Dark background to prevent white flash */
+            margin: 0;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+        .palm-glass {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        /* Initial Loader Styles */
+        #initial-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a0a0a;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        .loader-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="initial-loader">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    <script type="module" src="/src/index.tsx"></script>
+    
+    <!-- Deferred Third-Party Scripts -->
+    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8926834722982533" crossorigin="anonymous"></script>
+    <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+</body>
+</html>

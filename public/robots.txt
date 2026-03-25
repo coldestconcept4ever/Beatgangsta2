@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /api/trap
+Sitemap: https://beatgangsta.com/sitemap.xml
