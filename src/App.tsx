@@ -16,8 +16,8 @@ const PluginCard = React.lazy(() => import('./components/PluginCard').then(m => 
 const HardwareCard = React.lazy(() => import('./components/HardwareCard').then(m => ({ default: m.HardwareCard })));
 
 // Lazy load modals
-const CookieConsent = React.lazy(() => import('./components/modals/CookieConsent').then(m => ({ default: m.CookieConsent })));
-const CookiePolicy = React.lazy(() => import('./components/modals/CookiePolicy').then(m => ({ default: m.CookiePolicy })));
+const CookieConsent = React.lazy(() => import('./components/modals/CookieConsentModal').then(m => ({ default: m.CookieConsent })));
+const CookiePolicy = React.lazy(() => import('./components/modals/CookiePolicyModal').then(m => ({ default: m.CookiePolicy })));
 const ContactForm = React.lazy(() => import('./components/modals/ContactForm').then(m => ({ default: m.ContactForm })));
 const ApiKeyIntroModal = React.lazy(() => import('./components/modals/ApiKeyModals').then(m => ({ default: m.ApiKeyIntroModal })));
 const ApiKeyInputModal = React.lazy(() => import('./components/modals/ApiKeyModals').then(m => ({ default: m.ApiKeyInputModal })));
